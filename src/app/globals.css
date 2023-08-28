@@ -7,26 +7,32 @@
 
 * {font-family: 'Roboto', sans-serif;}
 
+
+.border{
+    border: 1px solid black;
+}
+
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.header{
+.header, .footer{
     width: 100%;
     height: 79px;
     background-color: #00A1FC;
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
+    padding: 12px; 
 }
 
 .icon{
     width: 61px;
     height: 42px;
     margin-right: 16px;
-    margin-left: auto;
+    margin-left: auto; 
 }
 
 .porto{
@@ -42,6 +48,7 @@
 
 .grayButton{
     display: flex;
+    flex-direction: column;
     height: 64px;
     max-width: 197px;
     width: 183px;
@@ -79,4 +86,44 @@
     display: flex;
     justify-content: space-evenly;
     gap: 26px;
+}
+
+.linkArrowL{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    width: 90px;
+    height: 28px;
+    margin-right: auto;
+}
+
+.linkArrowR{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    margin-left: auto;
+}
+
+
+.divBikes{
+    margin-top: 74px;
+    margin-bottom: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 48px;
+}
+
+.descBike{
+    margin-top: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: black;
 }

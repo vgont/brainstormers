@@ -1,5 +1,5 @@
-export default function Button({className, link}){
+export default function Button({className, href, texto}){
     return(
-        <button className={className}>{link}</button>
+        <button className={className}><a href={href}>{texto}</a></button>
     )
 }
