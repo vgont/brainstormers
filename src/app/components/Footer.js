@@ -1,9 +1,9 @@
-import LinkArrow from "./LinkArrow";
+import LinkHome from "./LinkHome";
 
-export default function Footer({className}){
+export default function Footer(){
     return(
         <div className="footer">
-            <LinkArrow href={''} texto={'VOLTAR'}/>
+            <LinkHome link={"/tipo"} texto={'VOLTAR'}/>
             <a className = "linkArrowR" href={''}>
                 AVANÇAR
             <img 

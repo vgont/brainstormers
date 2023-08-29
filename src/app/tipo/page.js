@@ -1,39 +1,40 @@
+import Image from "next/image";
 import Footer from "../components/Footer";
+import FooterAvancar from "../components/FooterAvancar";
 import Header from "../components/Header";
 import TipoBike from "../components/TipoBike";
 import Title from "../components/Title";
+import Link from "next/link";
 
 export default function Tipo() {
   return (
-    <main className="main">
+    <main className="flex flex-col items-center">
         <Header/>
-        <Title className="title mt-[82px]" texto={'QUAL O TIPO DA SUA BIKE?'}/>
-        <div className="divBikes">
+        <Title className="text-lg font-bold mt-20 mt-[82px]" texto={'QUAL O TIPO DA SUA BIKE?'}/>
+
+        <div className="mt-20 mb-20 flex items-center justify-center flex-col w-11/12 gap-12">
             <TipoBike 
             tipo={'PERFORMANCE'} 
-            img={'/images/bikeP.svg'} 
+            img={<Image src={'/images/bikeP.svg'} width={'36'} height={'36'}/>} 
             texto={'Para competições esportivas, em estradas pavimentadas, como ciclismo.'}
              />
+
             <TipoBike 
             tipo={'MOUNTAIN BIKE'} 
-            img={'/images/bikeM.svg'} 
+            img={<Image src={'/images/bikeM.svg'} width={'36'} height={'36'}/>} 
             texto={'Para trilhas off-road e terrenos acidentados.'}
             />
+
             <TipoBike 
             tipo={'URBANA'} 
-            img={'/images/bikeU.svg'} 
+            img={
+              <Image src={'/images/bikeU.svg'} width={'36'} height={'36'}/>
+            } 
             texto={'Confortável, de uso urbano e para o dia a dia.'}
             />
+            
         </div>
-        <div className="footer">
-        <a className = "linkArrowR" href={''}>
-                AVANÇAR
-            <img 
-                src="/images/arrowR.svg" 
-                alt="arrow"
-            />
-            </a>
-        </div>
+        <FooterAvancar link={"/tipo/potencia"}/>
     </main>
   )
 }

@@ -3,11 +3,9 @@ import Button from "./Button";
 export default function TipoBike({tipo, img, texto}){
     return(
         <div className="flex flex-col items-center">
-            <button className="grayButton">
-            <a className="flex flex-col items-center" href="localhost:3000/tipo/potencia">
+            <button className="flex flex-col h-16 p-5 justify-center items-center rounded-3xl font-semibold bg-gray-button text-black w-44">     
                 {tipo}
-                <img className="w-[37px]" src={img} alt="bike" />
-            </a>
+                {img}    
             </button>
         <p className="descBike">{texto}</p>
         </div>
