@@ -1,4 +1,4 @@
-export default function Toggle({texto}){
+export default function Toggle(){
     return(
         <label class="relative inline-flex items-center mb-5 cursor-pointer">
         <input type="checkbox" value="" class="sr-only peer"/>
