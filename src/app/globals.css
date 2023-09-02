@@ -20,28 +20,6 @@
     min-height: 100vh;
 }
 
-.header{
-    width: 100%;
-    height: 79px;
-    background-color: #00A1FC;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px; 
-}
-
-.footer{
-    height: 79px;
-    background-color: #00A1FC;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px; 
-    position: absolute;
-    bottom: 0;
-    width: 100%; 
-}
-
 .icon{
     width: 61px;
     height: 42px;
@@ -95,25 +73,6 @@
     gap: 26px;
 }
 
-.linkArrowL{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    width: 90px;
-    height: 28px;
-    margin-right: auto;
-}
-
-.linkArrowR{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    margin-left: auto;
-}
-
-
 .divBikes{
     margin-top: 74px;
     margin-bottom: 82px;
@@ -123,18 +82,4 @@
     flex-direction: column;
     width: 90%;
     gap: 48px;
-}
-
-.descBike{
-    margin-top: 12px;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    color: black;
-}
-
-.textA{
-    text-shadow: 0px 0px 3px black;
 }

@@ -1,16 +1,12 @@
-import LinkHome from "./LinkHome";
+import LinkArrow from "./LinkArrow";
 
-export default function Footer(){
+export default function Footer({hideArrowBack,link}){
     return(
-        <div className="footer">
-            <LinkHome link={"/tipo"} texto={'VOLTAR'}/>
-            <a className = "linkArrowR" href={''}>
-                AVANÇAR
-            <img 
-                src="/images/arrowR.svg" 
-                alt="arrow"
-            />
-            </a>
+        <div className="w-full h-20 bg-hf-blue flex flex-row items-center p-3 justify-between fixed bottom-0">
+            {
+                !hideArrowBack && <LinkArrow left={true} link={"/tipo"} texto={'VOLTAR'}/>
+            }
+            <LinkArrow link={link} texto={'AVANÇAR'}/>
         </div>
     )
 }

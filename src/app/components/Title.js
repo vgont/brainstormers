@@ -1,5 +1,5 @@
-export default function Title({className, texto}){
+export default function Title({texto, className}){
     return(
-        <h2 className={className}>{texto}</h2>
+        <h2 className={`text-lg font-bold mt-20`}>{texto}</h2>
     )
 }

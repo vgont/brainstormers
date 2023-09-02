@@ -11,7 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'blue-button': '#0046c0',
+        'blue-button': 'rgba(0, 70, 192, 0.60)',
         'gray-button': '#c5c5c5',
         'hf-blue': '#00a1fc;',
       },
