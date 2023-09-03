@@ -14,8 +14,7 @@ export default function Potencia() {
           <Toggle/>
         </div>
       </Main>
-      <Footer />
-
+      <Footer/>
     </div>
 
   )
