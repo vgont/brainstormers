@@ -20,7 +20,7 @@ export default function Dropdown() {
             </button>
             {isOpen && (
                 <div className="bg-blue-400 absolute top-20 flex flex-col items-start round-lg p-2 w-full">
-                    {ageList.map((item, i )=> (
+                    {ageList.map((item)=> (
                         <div className="flex w-full justify-center hover:bg-blue-300 cursor-pointer rounded-r-lg border-l-transparent hover:border-l-white border-l-4">
                             <button className="font-bold  p-4 ">{item.age}{item.year}</button>
                             <button className="font-bold  p-4"></button>
