@@ -1,25 +1,4 @@
-import { useState } from "react";
-
 export default function Input({ texto, submitValue, pHolder, valueLimit }) {
-
-    const [fpotencia, setFpotencia] = useState('');
-    const [error, setError] = useState('');
-
-    const handleInputChange = e => {
-        setFpotencia(e.target.value);
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        if (fpotencia === '') {
-            setError('Name must be filled out');
-        } else {
-            console.log('Form submitted:', fpotencia);
-            setFpotencia('');
-            setError('');
-        }
-    };
 
     return (
         <div>
