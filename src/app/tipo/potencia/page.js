@@ -22,7 +22,7 @@ export default function Potencia() {
             </div>}
         </div>
       </Main>
-      <Footer link={'/tipo/potencia'}/>
+      <Footer link={'/tipo/potencia/tempo_de_uso'}/>
     </div>
 
   )
