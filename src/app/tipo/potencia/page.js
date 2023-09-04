@@ -15,12 +15,15 @@ export default function Potencia() {
       <Header />
       <Main>
         <Title texto={'Sua bike é elétrica?'} />
-        <div className="flex flex-col items-center">
-          <Toggle onToggle={setTextIsShown}/>
-          {!textIsShown && <div><Input/></div>}
+        <div className="flex flex-col items-center gap-10">
+          <Toggle onToggle={setTextIsShown} />
+          {!textIsShown &&
+            <div>
+              <Input texto={'Watts'} submitValue={'Verificar Potência'} pHolder={'ex: 250'} valueLimit={'Atenção: Só aceitamos bikes elétricas de até 250W'}/>
+            </div>}
         </div>
       </Main>
-      <Footer/>
+      <Footer link={'/tipo/potencia'}/>
     </div>
 
   )
