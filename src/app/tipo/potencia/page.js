@@ -1,5 +1,4 @@
 "use client";
-import Dropdown from "@/app/components/Dropdown";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import Input from "@/app/components/Input";
