@@ -1,8 +1,8 @@
 import Header from "../components/Header";
-import TipoBike from "../components/TipoBike";
 import Title from "../components/Title";
 import Footer from "../components/Footer";
 import Main from "../components/Main";
+import BikeType from "../components/bikeType";
 
 export default function Tipo() {
   return (
@@ -11,13 +11,13 @@ export default function Tipo() {
       <Main>
         <div className="flex items-center justify-center flex-col w-11/12 gap-12">
           <Title texto={'Qual o tipo da sua bike?'} />
-          <TipoBike
+          <BikeType
             tipo={'Performance'}
           />
-          <TipoBike
+          <BikeType
             tipo={'Mountain Bike'}
           />
-          <TipoBike
+          <BikeType
             tipo={'Urbana'}
           />
         </div>
