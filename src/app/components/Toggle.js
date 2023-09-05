@@ -6,7 +6,7 @@ export default function Toggle( { onToggle } ){
 
     function changeToggle(){
         setToggle(!toggle)
-        onToggle(toggle)
+        onToggle(!toggle)
     }
 
     return(
