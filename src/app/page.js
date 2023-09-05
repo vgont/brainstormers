@@ -7,7 +7,7 @@ import Main from "./components/Main";
 export default function Home() {
   return (
     <div>
-      <Header hideHomeButton />
+      <Header hideHomeButton/>
       <Main>
         <Image className="mb-10" src={'/images/porto.png'} width={'284'} height={'134'} />
         <h2 className='text-lg font-Roboto font-bold'>Seja bem vindo!</h2>
