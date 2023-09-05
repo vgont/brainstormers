@@ -7,7 +7,7 @@ import Button from "../components/Button";
 export default function Tipo() {
   return (
     <div>
-      <Header />
+      <Header/>
       <Main>
         <div className="flex items-center justify-center flex-col w-11/12 gap-12">
           <Title texto={'Qual o tipo da sua bike?'} />
