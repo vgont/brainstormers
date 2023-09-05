@@ -11,9 +11,9 @@ export default function Tipo() {
       <Main>
         <div className="flex items-center justify-center flex-col w-11/12 gap-12">
           <Title texto={'Qual o tipo da sua bike?'} />
-          <Button texto={'Performance'} className={'bg-gray-button text-black'}/>  
-          <Button texto={'Mountain Bike'} className={'bg-gray-button text-black'}/>   
-          <Button texto={'Urbana'} className={'bg-gray-button text-black'}/>   
+          <Button texto={'Performance'}/>  
+          <Button texto={'Mountain Bike'}/>   
+          <Button texto={'Urbana'}/>   
         </div>
       </Main>
       <Footer hideArrowBack={true} link={"/tipo/potencia"} />
