@@ -8,7 +8,7 @@ import Toggle from "@/app/components/Toggle";
 import { useState } from "react";
 
 export default function Potencia() {
-  const [textIsShown, setTextIsShown] = useState(true)
+  const [textIsShown, setTextIsShown] = useState(false)
   return (
     <div>
       <Header />
@@ -16,7 +16,7 @@ export default function Potencia() {
         <Title texto={'Sua bike é elétrica?'} />
         <div className="flex flex-col items-center gap-10">
           <Toggle onToggle={setTextIsShown} />
-          {!textIsShown &&
+          {textIsShown &&
             <div>
               <Input texto={'Watts'} submitValue={'Verificar Potência'} pHolder={'ex: 250'} valueLimit={'Atenção: Só aceitamos bikes elétricas de até 250W'}/>
             </div>}
