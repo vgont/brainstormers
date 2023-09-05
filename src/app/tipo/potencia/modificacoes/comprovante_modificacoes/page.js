@@ -2,7 +2,6 @@ import Button from "@/app/components/Button";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import Main from "@/app/components/Main";
-import PhotoInput from "@/app/components/PhotoInput";
 import Title from "@/app/components/Title";
 
 export default function Comprovantes() {
@@ -11,7 +10,8 @@ export default function Comprovantes() {
       <Header/>
       <Main>
         <Title texto={'Precisamos dos seguintes comprovantes:'} />
-        <PhotoInput texto={'Nf da modificacao'}/>
+        <Button texto={'Nf da modificação'} photoButton={true}/>
+        <Button texto={'Nf do acessório'} photoButton={true}/>
       </Main>
       <Footer link={"/tipo/potencia/modificacoes/comprovantes"} />
     </div>
