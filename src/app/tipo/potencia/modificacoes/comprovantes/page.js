@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Comprovantes() {
   return (
     <div>
-      <Header />
+      <Header/>
       <Main>
         <Title texto={'Precisamos dos seguintes comprovantes:'} />
         <div className="flex flex-col justify-center items-center gap-20">
