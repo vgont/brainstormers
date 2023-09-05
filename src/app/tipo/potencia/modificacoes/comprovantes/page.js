@@ -18,7 +18,7 @@ export default function Comprovantes() {
             <Button texto={'Anexar núm. série'} photoButton={true}/>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <h3 className="mb-10">Você poderá encontrar o número de série nesses lugares:</h3>
+            <h3 className="m-10">Você poderá encontrar o número de série nesses lugares:</h3>
             <Image src={'/images/numBike.jpg'} width={300} height={150} />
           </div>
         </div>
