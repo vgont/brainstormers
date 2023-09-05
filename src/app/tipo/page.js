@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Title from "../components/Title";
 import Footer from "../components/Footer";
 import Main from "../components/Main";
-import BikeType from "../components/bikeType";
+import BikeType from "../components/BikeType";
 
 export default function Tipo() {
   return (
