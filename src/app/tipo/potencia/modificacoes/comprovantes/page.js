@@ -8,8 +8,8 @@ import Image from "next/image";
 export default function Comprovantes() {
   return (
     <div>
-      <Header/>
       <Main>
+      <Header/>
         <Title texto={'Precisamos dos seguintes comprovantes:'} />
         <div className="flex flex-col justify-center items-center gap-20">
           <div className="flex flex-col gap-10">
@@ -23,7 +23,7 @@ export default function Comprovantes() {
           </div>
         </div>
       </Main>
-      <Footer link={"/tipo/potencia/modificacoes/comprovantes"} />
+      <Footer link={"/tipo/potencia/modificacoes/comprovantes/arquivos"} />
     </div>
   )
 }
